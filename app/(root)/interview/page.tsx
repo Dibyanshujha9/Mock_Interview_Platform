@@ -1,8 +1,12 @@
 import React from 'react'
 import Agent from '@/components/Agent'
+import { getCurrentUser } from '@/lib/actions/auth.action'
 
 
-const page = () => {
+const page = async () => {
+
+const user = await getCurrentUser();
+
   return (
 
 <>
